@@ -15,16 +15,16 @@
 	  $discprice=($listprice - $discamount);
 	?>
 
-        <h1>This page is under construction</h1>
+        <h1>Product Discount Calculator</h1>
 
         <label>Product Description:</label>
-        <span><?php echo "$proddesc"; ?></span><br>
+        <span><?php echo htmlspecialchars($proddesc); ?></span><br>
 
         <label>List Price:</label>
-        <span><?php echo money_format('$%i', $listprice); ?></span><br>
+        <span><?php echo money_format('$%i', htmlspecialchars($listprice)); ?></span><br>
 
         <label>Standard Discount:</label>
-        <span><?php echo "$discperc", '%'; ?></span><br>
+        <span><?php echo htmlspecialchars($discperc), '%'; ?></span><br>
 
         <label>Discount Amount:</label>
         <span><?php echo money_format('$%i', $discamount); ?></span><br>

@@ -12,7 +12,9 @@
 	  'product_description');
           $listprice=filter_input(INPUT_POST, 'list_price');
   	  $discperc=filter_input(INPUT_POST, 'discount_percent');
-        ?>
+          $discamount=($listprice * $discperc / 100);
+	  $discprice=($listprice - $discamount);
+	?>
 
         <h1>This page is under construction</h1>
 
@@ -26,10 +28,10 @@
         <span><?php echo "$discperc"; ?></span><br>
 
         <label>Discount Amount:</label>
-        <span><?php echo ''; ?></span><br>
+        <span><?php echo "$discamount"; ?></span><br>
 
         <label>Discount Price:</label>
-        <span><?php echo ''; ?></span><br>
+        <span><?php echo "$discprice"; ?></span><br>
    </main>
 </body>
 </html>

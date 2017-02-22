@@ -8,8 +8,7 @@
     <main>
 
         <?php
-          $proddesc=filter_input(INPUT_POST,
-	  'product_description');
+          $proddesc=filter_input(INPUT_POST, 'product_description');
           $listprice=filter_input(INPUT_POST, 'list_price');
   	  $discperc=filter_input(INPUT_POST, 'discount_percent');
           $discamount=($listprice * $discperc / 100);

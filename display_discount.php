@@ -8,9 +8,10 @@
     <main>
 
         <?php
-          $proddesc=$_POST['product_description'];
-          $listprice=$_POST['list_price'];
-  	  $discperc=$_POST['discount_percent'];
+          $proddesc=filter_input(INPUT_POST,
+	  'product_description');
+          $listprice=filter_input(INPUT_POST, 'list_price');
+  	  $discperc=filter_input(INPUT_POST, 'discount_percent');
         ?>
 
         <h1>This page is under construction</h1>

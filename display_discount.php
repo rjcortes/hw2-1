@@ -22,16 +22,16 @@
         <span><?php echo "$proddesc"; ?></span><br>
 
         <label>List Price:</label>
-        <span><?php echo "$listprice"; ?></span><br>
+        <span><?php echo money_format('$%i', $listprice); ?></span><br>
 
         <label>Standard Discount:</label>
-        <span><?php echo "$discperc"; ?></span><br>
+        <span><?php echo "$discperc", '%'; ?></span><br>
 
         <label>Discount Amount:</label>
-        <span><?php echo "$discamount"; ?></span><br>
+        <span><?php echo money_format('$%i', $discamount); ?></span><br>
 
         <label>Discount Price:</label>
-        <span><?php echo "$discprice"; ?></span><br>
+        <span><?php echo money_format('$%i', $discprice); ?></span><br>
    </main>
 </body>
 </html>
